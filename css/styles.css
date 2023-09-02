@@ -185,6 +185,8 @@ a {
   color: var(--text);
   line-height: 150%;
   letter-spacing: 0.32px;
+  line-height: 1.5;
+  transition: color var(--animation);
 }
 
 .contact-links:hover,
@@ -205,4 +207,56 @@ a {
   position: absolute;
   bottom: -28.5;
   content: "";
+}
+
+.contacts {
+  display: none;
+  gap: 40px;
+}
+
+@media screen and (max-width: 767px) {
+  .contacts {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .contacts {
+    flex-direction: column;
+    gap: 12px;
+  }
+  .contact-links {
+    font-style: normal;
+    color: var(--text);
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.48px;
+  }
+}
+
+.menu-toggle {
+  min-height: 24px;
+  min-width: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  outline: none;
+}
+
+@media screen and (min-width: 768px) {
+  .menu-toggle {
+    display: none;
+  }
+}
+
+.menu-toggle:hover,
+.menu-toggle:focus {
+  background-color: rgba(0, 0, 0, 0.1);
 }
