@@ -735,3 +735,121 @@ a {
   align-items: center;
   justify-content: flex-end;
 }
+
+.navigation {
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+}
+
+.header-line {
+  border-bottom: 1px solid var(--accent);
+  box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 2px 1px 0px rgba(46, 47, 66, 0.08);
+}
+
+.list-our-team > li {
+  background-color: var(--white);
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(0, 0, 0, 0.08);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.list-projects > li {
+  flex-basis: calc((100%-48px) / 3);
+}
+
+.project-description {
+  background-color: var(--white);
+  border-color: var(--accent);
+  border-style: solid;
+  border-right-width: 1px;
+  border-bottom-width: 1px;
+  border-left-width: 1px;
+  border-top-width: 0;
+  padding: 32px 16px;
+}
+
+.feature-icon {
+  background-color: var(--light);
+  width: 100%;
+  border-radius: 4px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 1199px) {
+  .feature-icon {
+    display: none;
+  }
+}
+
+.social-icon {
+  display: flex;
+  gap: 24px;
+  margin-top: 8px;
+  justify-content: center;
+}
+
+.customers {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 72px;
+  column-gap: 16px;
+  justify-content: center;
+}
+
+@media screen and (min-width: 768px) {
+  .customers {
+    column-gap: 24px;
+  }
+}
+
+.customers-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 168px;
+  height: 88px;
+  border: 1px solid var(--light-slate);
+  border-radius: 4px;
+  fill: var(--light-slate);
+  transition: border-color var(--animation), fill var(--animation);
+}
+
+.customers-icons:hover,
+.customers-icons:focus {
+  border-color: var(--link-active);
+  fill: var(--link-active);
+}
+
+.footer-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  row-gap: 72px;
+  column-gap: 24px;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-wrapper {
+    column-gap: 80px;
+  }
+}
+
+.footer-social-title {
+  font-weight: 500;
+  text-align: center;
+  display: block;
+  margin-bottom: 16px;
+  color: var(--white);
+}
+
+@media screen and (min-width: 768px) {
+  .footer-social-title {
+    text-align: left;
+  }
+}
