@@ -199,7 +199,7 @@ a {
 }
 
 .contacts {
-  display: none;
+  display: flex;
   gap: 40px;
 }
 
@@ -892,4 +892,22 @@ a {
   justify-content: center;
   background-color: var(--primary-brand);
   transition: background-color var(--animation);
+}
+
+.footer-social-icon:hover,
+.footer-social-icon:focus {
+  background-color: var(--active-icon);
+}
+
+.modal {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  background-color: hsla(237, 18%, 22%, 0.4);
+  opacity: 100%;
+  transition: opacity var(--animation);
 }
