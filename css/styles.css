@@ -853,3 +853,43 @@ a {
     text-align: left;
   }
 }
+
+.footer-social-icon {
+  display: flex;
+  gap: 16px;
+  margin-top: 16px;
+  justify-content: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-social-icon {
+    margin-left: 40px;
+  }
+}
+
+.social-icon {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--primary-brand);
+  transition: background-color var(--animation);
+}
+
+.social-icon:hover,
+.social-icon:focus {
+  background-color: var(--link-active);
+}
+
+.footer-social-icon {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--primary-brand);
+  transition: background-color var(--animation);
+}
