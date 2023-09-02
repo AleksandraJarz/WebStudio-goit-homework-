@@ -528,15 +528,15 @@ a {
   }
 }
 
-.spec {
+.section-header {
+  color: var(--dark);
+  text-align: center;
   font-size: 36px;
   font-weight: 700;
   line-height: 1.11;
   letter-spacing: 0.72px;
   text-transform: capitalize;
   margin-bottom: 72px;
-  text-align: center;
-  color: var(--dark);
 }
 
 .spec-list {
@@ -557,4 +557,181 @@ a {
   list-style-type: none;
   margin: 0;
   padding: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .list-our-team {
+    row-gap: 64px;
+  }
+}
+
+.team-box {
+  background: var(--light);
+}
+
+.employee-name {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.4px;
+  padding: 0px;
+  margin-bottom: 8px;
+  text-align: center;
+  color: var(--dark);
+}
+
+.job-position {
+  text-align: center;
+  line-height: 1.5;
+  letter-spacing: 0.32px;
+  margin: 0;
+}
+
+.worker-card {
+  padding: 32px 0px;
+}
+
+.footer-background {
+  background: var(--dark);
+  padding: 100px 0px;
+}
+
+.footer-logo {
+  text-align: center;
+  color: var(--dark);
+  text-decoration: none;
+  font-family: "Raleway";
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 1.16;
+  letter-spacing: 0.54px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+  display: block;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-logo {
+    text-align: left;
+  }
+}
+
+.logo-white {
+  color: var(--light);
+}
+
+.footer-text {
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: 0.32px;
+  width: 264px;
+  margin-top: 17.5;
+  color: var(--light);
+}
+
+.section-project {
+  padding-top: 96px;
+  padding-bottom: 120px;
+}
+
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+  list-style-type: none;
+  margin-bottom: 72px;
+}
+
+.menu-button {
+  text-align: center;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.64px;
+  font-style: "inherit";
+  cursor: pointer;
+  padding: 12px 24px;
+  border-radius: 4px;
+  background: var(--light);
+  color: var(--primary-brand);
+  border: 1px solid var(--accent);
+  transition: background-color var(--animation), color var(--animation),
+    box-shadow var(--animation), border var(--animation);
+}
+
+.menu-button:hover,
+.menu-button:focus {
+  background-color: var(--link-active);
+  color: var(--light);
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
+    0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
+  border: 1px solid var(--link-active);
+}
+
+.list-projects {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 48px;
+  column-gap: 24px;
+  margin: 0;
+  padding: 0;
+}
+
+.project-card {
+  display: block;
+  transition: box-shadow var(--animation);
+}
+
+.project-card:focus,
+.project-card:hover {
+  box-shadow: var(--portfolio-shadow);
+}
+
+.project-card:focus .overlay-project,
+.project-card:hover .overlay-project {
+  transform: translateY(0);
+}
+
+.project-image {
+  position: relative;
+  overflow: hidden;
+}
+
+.overlay-project {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding-top: 40px;
+  padding-left: 32px;
+  background-color: var(--primary-brand);
+  color: var(--light);
+  line-height: 1.5;
+  letter-spacing: 0.32px;
+  transform: translateY(100%);
+  transition: transform var(--animation);
+}
+
+.projects-name {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.4px;
+  margin-top: 0;
+  margin-bottom: 8px;
+  color: var(--dark);
+}
+
+.projects-type {
+  line-height: 1.5;
+  letter-spacing: 0.32px;
+  margin: 0;
+}
+
+.top-line {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
