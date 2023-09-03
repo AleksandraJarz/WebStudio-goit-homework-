@@ -68,8 +68,6 @@ a {
   max-width: 428px;
   padding-left: 15px;
   padding-right: 15px;
-  margin-left: auto;
-  margin-bottom: auto;
   overflow: hidden;
 }
 
@@ -82,7 +80,7 @@ a {
 @media screen and (min-width: 1200px) {
   .container {
     max-width: 1158px;
-    padding: 0px 15px;
+    padding: 0px;
     margin: 0 auto;
   }
 }
@@ -168,6 +166,7 @@ a {
 }
 
 .menu-nav {
+  font-size: 16px;
   font-style: normal;
   font-weight: 500;
   line-height: 1.5;
@@ -360,7 +359,7 @@ a {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  max-width: 428px;
+  width: 428px;
   height: 432px;
   padding-top: 112px;
   margin-left: auto;
@@ -384,8 +383,8 @@ a {
   .hero {
     padding-bottom: 112px;
     padding-top: 112px;
-    max-width: 768px;
-    max-height: 436px;
+    width: 768px;
+    height: 436px;
   }
 }
 
@@ -393,8 +392,9 @@ a {
   .hero {
     padding-bottom: 188px;
     padding-top: 188px;
-    max-width: 1440px;
-    max-height: 600px;
+    width: 1440px;
+    height: 600px;
+    background-size: cover;
   }
 }
 
@@ -849,15 +849,18 @@ a {
 
 .footer-title {
   font-weight: 500;
-  text-align: center;
-  display: block;
   margin-bottom: 16px;
   color: var(--white);
+  align-items: center;
+  display: block;
 }
 
 @media screen and (min-width: 768px) {
-  .footer-social-title {
-    text-align: left;
+  .footer-title {
+    text-align: center;
+    margin-left: 120px;
+    line-height: 24px;
+    letter-spacing: 0.32px;
   }
 }
 
@@ -866,11 +869,16 @@ a {
   gap: 16px;
   margin-top: 16px;
   justify-content: center;
-  list-style-type: none;
+}
+
+@media screen and (min-width: 768px) {
+  .social-icons-footer {
+    margin-left: 120px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
-  .footer-social-icon {
+  .footer-social {
     margin-left: 40px;
   }
 }
@@ -1133,8 +1141,7 @@ input[type="checkbox"] {
 }
 
 .subscribe-wrapper {
-  width: 100%;
-  margin-left: auto;
+  max-width: 100%;
 }
 
 @media screen and(min-width:768px) {
@@ -1142,18 +1149,18 @@ input[type="checkbox"] {
     display: flex;
     gap: 24px;
     width: auto;
-    margin-left: auto;
   }
 }
 
-.subscribe-back-wrapper {
-  display: flex;
-  align-items: center;
-  margin-top: 16px;
+@media screen and (min-width: 768px) {
+  .subscribe-back-wrapper {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .subscribe-email {
-  width: 100%;
+  width: 398px;
   height: 40px;
   background-color: inherit;
   border-radius: 4px;
@@ -1168,6 +1175,9 @@ input[type="checkbox"] {
 @media screen and (min-width: 768px) {
   .subscribe-email {
     width: 264px;
+    margin-left: 80px;
+    margin-top: 20px;
+    margin-right: 24px;
   }
 }
 
@@ -1206,15 +1216,7 @@ input[type="checkbox"] {
 
 @media screen and (min-width: 768px) {
   .subscribe-button {
-    margin-top: 34px;
-    margin-right: 40px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .subscribe-button {
-    margin-top: 34px;
-    margin-right: 0px;
+    margin-top: 20px;
   }
 }
 
