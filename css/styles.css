@@ -1142,7 +1142,14 @@ input[type="checkbox"] {
     display: flex;
     gap: 24px;
     width: auto;
+    margin-left: auto;
   }
+}
+
+.subscribe-back-wrapper {
+  display: flex;
+  align-items: center;
+  margin-top: 16px;
 }
 
 .subscribe-email {
