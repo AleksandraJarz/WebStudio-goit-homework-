@@ -661,8 +661,8 @@ a {
     box-shadow var(--animation), border var(--animation);
 }
 
-.menu-button:hover,
-.menu-button:focus {
+.menu-buttons:hover,
+.menu-buttons:focus {
   background-color: var(--link-active);
   color: var(--light);
   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
@@ -680,9 +680,11 @@ a {
   padding: 0;
 }
 
+.list-project > li {
+  flex-basis: calc((100%-48px) / 3);
+}
 .project-card {
   display: block;
-  text-decoration: none;
   transition: box-shadow var(--animation);
 }
 
@@ -709,6 +711,7 @@ a {
   height: 100%;
   padding-top: 40px;
   padding-left: 32px;
+  padding-right: 32px;
   background-color: var(--primary-brand);
   color: var(--light);
   line-height: 1.5;
@@ -720,7 +723,7 @@ a {
 .projects-name {
   font-size: 20px;
   font-weight: 500;
-  line-height: 1.2;
+  line-height: 1.5;
   letter-spacing: 0.4px;
   margin-top: 0;
   margin-bottom: 8px;
@@ -731,18 +734,18 @@ a {
   line-height: 1.5;
   letter-spacing: 0.32px;
   margin: 0;
+  font-size: 16px;
 }
 
 .top-line {
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: space-between;
 }
 
 .navigation {
   display: flex;
   align-items: center;
-  margin-right: auto;
 }
 
 .header-line {
@@ -757,10 +760,6 @@ a {
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
     0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(0, 0, 0, 0.08);
   border-radius: 0px 0px 4px 4px;
-}
-
-.list-projects > li {
-  flex-basis: calc((100%-48px) / 3);
 }
 
 .project-description {
@@ -795,6 +794,8 @@ a {
   gap: 24px;
   margin-top: 8px;
   justify-content: center;
+  list-style-type: none;
+  align-items: center;
 }
 
 .customers {
@@ -803,6 +804,7 @@ a {
   row-gap: 72px;
   column-gap: 16px;
   justify-content: center;
+  list-style-type: none;
 }
 
 @media screen and (min-width: 768px) {
@@ -843,10 +845,6 @@ a {
   }
 }
 
-.footer-social {
-  margin-left: 120px;
-}
-
 .footer-social-title {
   font-weight: 500;
   text-align: center;
@@ -866,6 +864,7 @@ a {
   gap: 16px;
   margin-top: 16px;
   justify-content: center;
+  list-style-type: none;
 }
 
 @media screen and (min-width: 1200px) {
