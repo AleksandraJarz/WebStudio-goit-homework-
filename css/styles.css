@@ -82,8 +82,6 @@ a {
 @media screen and (min-width: 1200px) {
   .container {
     max-width: 1158px;
-    padding: 0px 15px;
-    margin: 0 auto;
   }
 }
 
@@ -116,15 +114,15 @@ a {
 .logo {
   font-family: Raleway;
   font-size: 18px;
-  font-style: normal;
   font-weight: 800;
   color: var(--dark);
-  line-height: 1.3125;
-  letter-spacing: 0.03375;
+  line-height: 1.16;
+  letter-spacing: 0.054px;
   text-transform: uppercase;
   padding-right: 76px;
   padding-top: 25.5px;
   padding-bottom: 25.5px;
+  text-decoration: none;
 }
 
 .web-logo {
@@ -172,7 +170,7 @@ a {
   font-weight: 500;
   line-height: 1.5;
   color: var(--text);
-  letter-spacing: 0.32;
+  letter-spacing: 0.32px;
 }
 
 .menu-nav:hover,
@@ -184,7 +182,6 @@ a {
 .link:focus {
   color: var(--link-active);
 }
-
 .current-link {
   position: relative;
 }
@@ -196,7 +193,7 @@ a {
   border-radius: 2px;
   background-color: var(--link-active);
   position: absolute;
-  bottom: -28.5;
+  bottom: -27.5px;
   content: "";
 }
 
@@ -205,21 +202,18 @@ a {
   gap: 40px;
 }
 
-.contact-links {
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  color: var(--text);
-  line-height: 150%;
-  letter-spacing: 0.32px;
-  line-height: 1.5;
-  transition: color var(--animation);
-}
-
 @media screen and (max-width: 767px) {
   .contacts {
     display: none;
   }
+}
+.contact-links {
+  font-size: 16px;
+  font-style: normal;
+  color: var(--text);
+  letter-spacing: 0.32px;
+  line-height: 1.5;
+  transition: color var(--animation);
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -363,12 +357,14 @@ a {
     url(../images/people-office.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  max-width: 1440px;
-  height: 600px;
-  padding-top: 188px;
+  background-size: cover;
+  max-width: 428px;
+  height: 432px;
+  padding-top: 112px;
   margin-left: auto;
   margin-right: auto;
-  padding-bottom: 188px;
+  padding-bottom: 112px;
+  text-align: center;
 }
 
 @media screen and (min-device-pixel-ratio: 2),
@@ -1224,4 +1220,21 @@ input[type="checkbox"] {
   width: 24px;
   align-items: center;
   justify-content: center;
+}
+
+.js-close-menu {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--accent);
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  fill: var(--dark);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  transition: background-color var(--animation), border var(--animation),
+    fill var(--animation);
 }
