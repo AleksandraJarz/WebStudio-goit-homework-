@@ -82,6 +82,8 @@ a {
 @media screen and (min-width: 1200px) {
   .container {
     max-width: 1158px;
+    padding: 0px 15px;
+    margin: 0 auto;
   }
 }
 
@@ -845,7 +847,7 @@ a {
   }
 }
 
-.footer-social-title {
+.footer-title {
   font-weight: 500;
   text-align: center;
   display: block;
@@ -1132,6 +1134,7 @@ input[type="checkbox"] {
 
 .subscribe-wrapper {
   width: 100%;
+  margin-left: auto;
 }
 
 @media screen and(min-width:768px) {
