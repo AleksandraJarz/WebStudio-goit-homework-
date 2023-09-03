@@ -452,15 +452,6 @@ a {
   background-color: var(--link-active);
 }
 
-.feature-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 72px;
-  list-style-type: none;
-  margin: 0px;
-  padding: 0px;
-}
-
 .feature {
   font-size: 36px;
   font-weight: 700;
@@ -472,7 +463,16 @@ a {
   color: var(--dark);
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+.feature-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 72px;
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
   .feature-list li {
     max-width: 356px;
   }
@@ -526,18 +526,10 @@ a {
   }
 }
 
-.spec-header {
-  font-size: 36px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 2.5;
-  letter-spacing: 0.72px;
-  text-transform: capitalize;
-  text-align: center;
-  color: var(--dark);
-  padding-top: 120px;
-  padding-bottom: 72px;
-  margin: 0px;
+@media screen and (min-width: 1200px) {
+  .work {
+    padding-top: 120px;
+  }
 }
 .section-header {
   color: var(--dark);
@@ -640,6 +632,10 @@ a {
   color: var(--light);
 }
 
+.section-projects {
+  padding-top: 96px;
+  padding-bottom: 120px;
+}
 .filters {
   display: flex;
   flex-wrap: wrap;
@@ -647,7 +643,6 @@ a {
   gap: 24px;
   list-style-type: none;
   margin-bottom: 72px;
-  margin-top: 96px;
 }
 
 .menu-buttons {
