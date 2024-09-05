@@ -1,3 +1,4 @@
+
 ## Overview
 WebStudio is a website project created for a fictional company called “WebStudio” as part of a GOIT course. 
 The site aims to present the company's strategy and services, companies that have used the services, team members and also a portfolio of already completed projects.
@@ -11,8 +12,8 @@ The site aims to present the company's strategy and services, companies that hav
 </ul>
 
 The project focuses on delivering a modern and visually appealing website using 
-<ul>
-    <li>JavaScript</li>
-    <li>HTML</li>
-    <li>CSS</li>
-</ul>
+
+- ![js](https://github.com/user-attachments/assets/bf361991-34c7-4948-b4b1-3c6ace2eaf32)
+- ![html](https://github.com/user-attachments/assets/b41ca610-c398-4f96-9572-382aaec28eaf)
+- ![css3](https://github.com/user-attachments/assets/038e4fe5-346d-480e-9af6-2fbf6dc3b8e4)
+
